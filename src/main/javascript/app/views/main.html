@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <h4>Encrypt Single Bit</h4>
+    <p>
+      Alegeti valoarea bitului m si apoi apasati Criptare:
+    </p>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <label for="valM">valoarea lui m:</label>
+        <div class="radio">
+          <label>
+            <input type="radio" ng-model="bit" name="optionsRadios" id="bit0" value="0" checked>
+            Valoarea 0
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" ng-model="bit" name="optionsRadios" id="bit1" value="1">
+            Valoarea 1
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <button ng-disabled="!bit" ng-click="doEncrypt()" type="button" role="button" class="btn btn-primary btn-active">Criptare</button>
+  </div>
+  <div class="row">
+    <h4>Rezultatul criptarii:</h4>
+    <textarea rows="5" cols="140">{{$enctext}}</textarea>
+  </div>
+</div>
