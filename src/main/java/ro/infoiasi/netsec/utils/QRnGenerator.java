@@ -58,12 +58,26 @@ public class QRnGenerator {
 	public void setLength(int length) {
 		this.length = length;
 	}
-	
+	/**
+	 * This method tests if a is QRn mod n
+	 * It's based on the following propeties:
+	 *  - Let's note [a, n] the Jacobi symbol
+	 *  i) 	for any odd prime p and andy positive integer a:
+	 *   [a, p] = a ^ ((p-1)/2) mod p
+	 *  ii) let n = p * q, p, q prime numbers 
+	 *  and *  [a, n] = [a, p] [a, q]
+	 *  
+	 * @param a
+	 * @return true if a is a quadratic residue mod N.
+	 */
 	public boolean isQRn(BigInteger a){
 		return a.modPow(P.subtract(BigInteger.ONE).divide(TWO ), P).equals(BigInteger.ONE) &&
 				a.modPow(Q.subtract(BigInteger.ONE).divide(TWO ), Q).equals(BigInteger.ONE); 
 	}
-	
+	/**
+	 * returns a new element from Zn which is not a quadratic rezidue mod N
+	 * @return
+	 */
 	public BigInteger getNewNonQRn(){
 		if(null == N){
 			logger.error("Eroare la generare NQRn: init");
@@ -76,7 +90,10 @@ public class QRnGenerator {
 			}
 		}
 	}
-	
+	/**
+	 * returns a new element from Zn
+	 * @return
+	 */
 	public BigInteger getNewFromZn(){
 		if(null == N){
 			logger.error("Eroare la generare Zn: init");
@@ -89,7 +106,11 @@ public class QRnGenerator {
 			}
 		}
 	}
-	
+	/**
+	 * (pseudo) random number generator
+	 * @param byteLength the byte length of the resulting output
+	 * @return a positive random number
+	 */
 	public BigInteger rng(int byteLength){
 		while(true){
 			byte[] bytes = new byte[byteLength];
