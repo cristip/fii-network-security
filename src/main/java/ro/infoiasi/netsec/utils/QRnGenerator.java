@@ -41,7 +41,7 @@ public class QRnGenerator {
 		rnd = new SecureRandom(lambdaSeed);
 		RSAGen();
 		Y = getNewNonQRn();
-		logger.info("init P, Q, N, Y: " + P.toString() + ", " + Q.toString() + ", " + N.toString());
+		logger.info("init P, Q, N, Y: " + P.toString().substring(0, 5) + ", " + Q.toString().substring(0, 5) + ", " + N.toString().substring(0, 5) + ", " + P.toString().substring(0, 5));
 	}
 	
 	private void RSAGen(){

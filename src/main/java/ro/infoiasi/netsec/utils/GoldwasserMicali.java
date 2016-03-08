@@ -1,6 +1,7 @@
 package ro.infoiasi.netsec.utils;
 
 import java.math.BigInteger;
+import java.util.Date;
 
 import org.apache.log4j.Logger;
 
@@ -11,7 +12,6 @@ public class GoldwasserMicali {
 	
 	final static Logger logger = Logger.getLogger(GoldwasserMicali.class);
 	private QRnGenerator gen;
-	private BigInteger y;
 	private static final String LAMBDA = "19800120";
 	
 	private static final GoldwasserMicali instance = new GoldwasserMicali();
@@ -28,7 +28,7 @@ public class GoldwasserMicali {
 	public void setup(){
 		try{
 			int byteLength = 1024;
-			byte [] lambdaBytes = LAMBDA.getBytes();
+			byte [] lambdaBytes = String.valueOf( new Date().getTime() ).getBytes();
 			gen = new QRnGenerator(lambdaBytes, byteLength);
 		}catch(Exception e){
 			logger.error(e);
@@ -49,7 +49,7 @@ public class GoldwasserMicali {
 			return c.toByteArray();
 		}
 		// = gen.getY().modPow(m, gen.getN()).multiply(x.modPow(new BigInteger("2"), gen.getN()));
-		return c.multiply(y).mod(gen.getN()).toByteArray();
+		return c.multiply(gen.getY()).mod(gen.getN()).toByteArray();
 	}
 	public BigInteger decrypt(byte[] bytes){
 		BigInteger c = new BigInteger(bytes);
@@ -57,5 +57,15 @@ public class GoldwasserMicali {
 			return BigInteger.ZERO;
 		}
 		return BigInteger.ONE;
+	}
+
+
+	public String decrypt(String cryptoText) throws InputException{
+		try{
+			byte[] bytes = CryptoUtils.hex2bytes(cryptoText);
+			return decrypt(bytes).toString();
+		}catch(Exception e){
+			throw new InputException(e.getMessage());
+		}
 	}
 }

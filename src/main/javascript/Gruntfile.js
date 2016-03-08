@@ -22,7 +22,8 @@ module.exports = function (grunt) {
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
-    dist: 'dist'
+    dist: 'dist',
+	deploy: '../webapp'
   };
 
   // Define the configuration for all the tasks
@@ -414,7 +415,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
-      }
+      },
+	  deploy: {
+		cwd: '<%= yeoman.dist %>',
+		dest: '<%= yeoman.deploy %>/', 
+		src: '[**]'
+	  }
     },
 
     // Run some tasks in parallel to speed up the build process
@@ -486,7 +492,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+	'copy:deploy'
   ]);
 
   grunt.registerTask('default', [

@@ -19,21 +19,37 @@ public class GM extends HttpServlet {
 	 */
 	private static final long serialVersionUID = -8519648183226251148L;
 	
-	public void init() throws ServletException{
-		GoldwasserMicali.getInstance();
-	}
+	//public void init() throws ServletException{
+	//	GoldwasserMicali.getInstance();
+	//}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String bit = request.getParameter("bit");
-		try{
-			int m = Integer.parseInt(bit);
-			GoldwasserMicali gm = GoldwasserMicali.getInstance();
-			String result = gm.encrypt(m);
-			response.getWriter().append(result);
-			response.getWriter().flush();
-		}catch(NumberFormatException | InputException e){
-			response.sendError(400, "Bad request: bit must be 0 or 1. Was: " + bit);
+		String cryptoText = request.getParameter("ctext");
+		GoldwasserMicali gm = GoldwasserMicali.getInstance();
+		String result = null;
+		if(null != bit){
+			try{
+				int m = Integer.parseInt(bit);
+				result = gm.encrypt(m);
+				
+			}catch(NumberFormatException | InputException e){
+				response.sendError(400, "Bad request: bit must be 0 or 1. Was: " + bit);
+			}
+		}else if(null != cryptoText){
+			try{
+				result = gm.decrypt(cryptoText);
+			}catch(InputException e){
+				response.sendError(400, e.getMessage());
+			}
 		}
+		if(null == result){
+			response.sendError(400, "Empty input.");
+			return;
+		}
+		response.getWriter().append(result);
+		response.getWriter().flush();
+		
 	}
 
 }

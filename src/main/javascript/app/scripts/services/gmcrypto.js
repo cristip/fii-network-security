@@ -21,6 +21,16 @@ angular.module('javascriptApp')
     		params:params
     	});
     };
+    crypto.decodeText = function(ctext){
+    	var params = {
+    		ctext:ctext
+    	};
+    	return $http({
+    		method:'POST',
+    		url:'http://localhost:8080/fii-net-sec/GM',
+    		params:params
+    	});
+    };
 
     return crypto;
   });

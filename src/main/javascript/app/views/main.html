@@ -13,13 +13,13 @@
         <label for="valM">valoarea lui m:</label>
         <div class="radio">
           <label>
-            <input type="radio" ng-model="bit" name="optionsRadios" id="bit0" value="0" checked>
+            <input type="radio" ng-click="decBit = null" ng-model="bit" name="optionsRadios" id="bit0" value="0" checked>
             Valoarea 0
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" ng-model="bit" name="optionsRadios" id="bit1" value="1">
+            <input type="radio" ng-click="decBit = null" ng-model="bit" name="optionsRadios" id="bit1" value="1">
             Valoarea 1
           </label>
         </div>
@@ -32,6 +32,19 @@
   </div>
   <div class="row">
     <h4>Rezultatul criptarii:</h4>
-    <textarea rows="5" cols="140">{{$enctext}}</textarea>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <textarea rows="5" cols="140">{{encryptedData}}</textarea>
+    </div>
+    <div class="col-sm-6">
+      <code>{{encryptedDataBin}}</code>
+    </div>
+  </div>
+  <div class="row">
+    <button ng-disabled="!encryptedData" ng-click="doDecrypt()" type="button" role="button" class="btn btn-primary btn-active">Decriptare</button>
+  </div>
+  <div class="row" ng-show="decBit">
+    <label> Resultatul decriptarii: <span class="label label-success">{{decBit}}</span></label>
   </div>
 </div>
