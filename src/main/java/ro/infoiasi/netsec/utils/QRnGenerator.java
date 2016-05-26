@@ -2,8 +2,10 @@ package ro.infoiasi.netsec.utils;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
+import java.util.Date;
 
 import org.apache.log4j.Logger;
+import org.bouncycastle.pqc.math.linearalgebra.IntegerFunctions;
 
 
 public class QRnGenerator {
@@ -17,29 +19,36 @@ public class QRnGenerator {
 	
 	private byte[] lambdaSeed;
 	
-	private static final String DEFAULT_LAMBDA = "Lambda implicit";
+	private static final String DEFAULT_LAMBDA = "Lambda implicit: ";
 	private static final int DEFAULT_LENGTH = 1024;
 	private SecureRandom rnd;
 	
 	private int length;
-
-	private static final BigInteger TWO = BigInteger.ONE.add(BigInteger.ONE);
 	
+	private int tries = 0;
+
 	public QRnGenerator(){
-		this.lambdaSeed =  DEFAULT_LAMBDA.getBytes();
 		this.setLength(DEFAULT_LENGTH);
 		this.init();
 	}
 	
-	public QRnGenerator(byte[] lambda, int byteLength) {
-		this.lambdaSeed = lambda;
-		this.setLength(byteLength);
-		this.init();
-	}
+	
 	
 	private void init(){
+		this.tries ++;
+		this.lambdaSeed =  (DEFAULT_LAMBDA + String.valueOf(tries) + "@" + String.valueOf( new Date().getTime() )) .getBytes();
 		rnd = new SecureRandom(lambdaSeed);
 		RSAGen();
+		if(tries > 1000){
+			logger.error("Fatal Error: in " + tries + " tries: N is " + N.toByteArray().length);
+			return;
+		}
+		if(N.toByteArray().length != 128){
+			logger.info("try #" + this.tries +": N:"+N.toByteArray().length);
+			init();
+			return;
+		}
+		logger.info("SUCCESS: Completed in " + tries + " tries: N is " + N.toByteArray().length);
 		Y = getNewNonQRn();
 		logger.info("init P, Q, N, Y: " + P.toString().substring(0, 5) + ", " + Q.toString().substring(0, 5) + ", " + N.toString().substring(0, 5) + ", " + P.toString().substring(0, 5));
 	}
@@ -71,8 +80,12 @@ public class QRnGenerator {
 	 * @return true if a is a quadratic residue mod N.
 	 */
 	public boolean isQRn(BigInteger a){
-		return a.modPow(P.subtract(BigInteger.ONE).divide(TWO ), P).equals(BigInteger.ONE) &&
-				a.modPow(Q.subtract(BigInteger.ONE).divide(TWO ), Q).equals(BigInteger.ONE); 
+		
+		//return a.modPow(P.subtract(BigInteger.ONE).divide(TWO ), P).equals(BigInteger.ONE) &
+		//		a.modPow(Q.subtract(BigInteger.ONE).divide(TWO ), Q).equals(BigInteger.ONE);
+		int jacobiP = IntegerFunctions.jacobi(a, P);
+		int jacobiQ = IntegerFunctions.jacobi(a, Q);
+		return (jacobiP == 1 && jacobiQ == 1);
 	}
 	/**
 	 * returns a new element from Zn which is not a quadratic rezidue mod N

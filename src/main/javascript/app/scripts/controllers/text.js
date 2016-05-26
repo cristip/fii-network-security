@@ -2,18 +2,16 @@
 
 /**
  * @ngdoc function
- * @name javascriptApp.controller:MainCtrl
+ * @name javascriptApp.controller:TextCtrl
  * @description
- * # MainCtrl
+ * # TextCtrl
  * Controller of the javascriptApp
  */
 angular.module('javascriptApp')
-  .controller('MainCtrl', function ($scope, $log, $timeout, GMCrypto) {
-    
-  	
-
-  	function encryptResult(result){
-  		$log.info('encBit data ', result);
+  .controller('TextCtrl', function ($scope, $log, $timeout, GMCrypto) {
+  	$scope.inText = '';
+    function encryptResult(result){
+  		$log.info('encText data ', result);
   		$timeout(function(){
   			$scope.encryptedData = result.data;	
   			$scope.encryptedDataHex = GMCrypto.bin2Hex(result.data);
@@ -21,11 +19,12 @@ angular.module('javascriptApp')
   		
   	}
   	function encryptFault(error){
-  		$log.error('encBit error ', error);
+  		$log.error('encText error ', error);
   	}
   	function decryptResult(result){
+  		$log.info("got result ", result);
   		$timeout(function(){
-  			$scope.decBit = result.data;
+  			$scope.decText = result.data;
   		});
   	}
   	function decryptFault(error){
@@ -34,26 +33,24 @@ angular.module('javascriptApp')
 
 
   	$scope.doEncrypt = function(){
-  		$scope.decBit = null;
+  		$scope.decText = null;
   		$scope.encryptedData = "";
-  		if(null === $scope.bit){
-  			$log.info('no bit ', $scope.bit);
+  		if(null === $scope.inText){
+  			$log.info('no bit ', $scope.inText);
   			return;
   		}
-  		$log.info('encrypting ', $scope.bit);
-  		GMCrypto.encBit($scope.bit).then(encryptResult, encryptFault);
+  		$log.info('encrypting ', $scope.inText);
+  		GMCrypto.encText($scope.inText).then(encryptResult, encryptFault);
   		
   	};
 
   	$scope.doDecrypt = function(){
-  		$scope.decBit = null;
+  		$scope.decText = null;
   		if(null === $scope.encryptedData){
   			$log.info('no encryptedData ', $scope.encryptedData);
   			return;	
   		}
-  		$log.info('decrypting ', $scope.encryptedData);
-  		GMCrypto.decodeSingleBit($scope.encryptedData).then(decryptResult, decryptFault);
+  		
+  		GMCrypto.decypher($scope.encryptedData).then(decryptResult, decryptFault);
   	};
-
-
   });
