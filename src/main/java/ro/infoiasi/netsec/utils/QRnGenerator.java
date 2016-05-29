@@ -23,6 +23,10 @@ public class QRnGenerator {
 	private static final int DEFAULT_LENGTH = 1024;
 	private SecureRandom rnd;
 	
+	//private static final BigInteger TWO = new BigInteger("2");
+
+	private static final int MAX_INIT_TRIES = 10;
+	
 	private int length;
 	
 	private int tries = 0;
@@ -39,7 +43,7 @@ public class QRnGenerator {
 		this.lambdaSeed =  (DEFAULT_LAMBDA + String.valueOf(tries) + "@" + String.valueOf( new Date().getTime() )) .getBytes();
 		rnd = new SecureRandom(lambdaSeed);
 		RSAGen();
-		if(tries > 1000){
+		if(tries > MAX_INIT_TRIES){
 			logger.error("Fatal Error: in " + tries + " tries: N is " + N.toByteArray().length);
 			return;
 		}

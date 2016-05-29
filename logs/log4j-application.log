@@ -286,3 +286,375 @@
 26-Mai-2016 23:43:19 INFO  GM:43 - found content type app/json
 26-Mai-2016 23:43:19 INFO  GM:56 - got json object
 26-Mai-2016 23:43:20 INFO  GM:84 - decrypted o parola foarte lunga in 183 ms
+27-Mai-2016 18:30:33 INFO  QRnGenerator:51 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:30:33 INFO  QRnGenerator:53 - init P, Q, N, Y: 10219, 77737, 79443, 10219
+27-Mai-2016 18:30:33 INFO  GM:75 - encrypted a in 4 ms
+27-Mai-2016 18:30:37 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:30:37 INFO  GM:56 - got json object
+27-Mai-2016 18:30:37 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:33:54 INFO  QRnGenerator:51 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:33:54 INFO  QRnGenerator:53 - init P, Q, N, Y: 93408, 82716, 77263, 93408
+27-Mai-2016 18:33:54 INFO  GM:75 - encrypted a in 3 ms
+27-Mai-2016 18:33:59 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:33:59 INFO  GM:56 - got json object
+27-Mai-2016 18:34:08 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:38:17 INFO  QRnGenerator:51 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:38:17 INFO  QRnGenerator:53 - init P, Q, N, Y: 10612, 82799, 87867, 10612
+27-Mai-2016 18:38:17 INFO  GM:75 - encrypted a in 6 ms
+27-Mai-2016 18:38:21 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:38:21 INFO  GM:56 - got json object
+27-Mai-2016 18:38:35 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:39:25 INFO  GM:84 - decrypted a in 64195 ms
+27-Mai-2016 18:39:50 INFO  GM:75 - encrypted a in 1 ms
+27-Mai-2016 18:39:57 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:39:57 INFO  GM:56 - got json object
+27-Mai-2016 18:39:57 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:39:57 INFO  GM:84 - decrypted a in 23 ms
+27-Mai-2016 18:40:53 INFO  QRnGenerator:47 - try #1: N:129
+27-Mai-2016 18:40:53 INFO  QRnGenerator:47 - try #2: N:129
+27-Mai-2016 18:40:53 INFO  QRnGenerator:47 - try #3: N:129
+27-Mai-2016 18:40:53 INFO  QRnGenerator:51 - SUCCESS: Completed in 4 tries: N is 128
+27-Mai-2016 18:40:53 INFO  QRnGenerator:53 - init P, Q, N, Y: 76627, 77310, 59240, 76627
+27-Mai-2016 18:40:53 INFO  GM:75 - encrypted a in 2 ms
+27-Mai-2016 18:40:55 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:40:55 INFO  GM:56 - got json object
+27-Mai-2016 18:40:55 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:40:55 INFO  GM:84 - decrypted   in 0 ms
+27-Mai-2016 18:45:16 INFO  QRnGenerator:51 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:45:16 INFO  QRnGenerator:53 - init P, Q, N, Y: 86356, 90292, 77973, 86356
+27-Mai-2016 18:45:16 INFO  GM:75 - encrypted a in 4 ms
+27-Mai-2016 18:45:24 INFO  GM:75 - encrypted a in 3 ms
+27-Mai-2016 18:45:27 INFO  GM:75 - encrypted a in 2 ms
+27-Mai-2016 18:45:29 INFO  GM:75 - encrypted a in 11 ms
+27-Mai-2016 18:45:32 INFO  GM:75 - encrypted a in 1 ms
+27-Mai-2016 18:45:36 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:36 INFO  GM:56 - got json object
+27-Mai-2016 18:45:36 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:37 INFO  GM:84 - decrypted a in 40 ms
+27-Mai-2016 18:45:39 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:39 INFO  GM:56 - got json object
+27-Mai-2016 18:45:39 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:40 INFO  GM:84 - decrypted a in 15 ms
+27-Mai-2016 18:45:42 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:42 INFO  GM:56 - got json object
+27-Mai-2016 18:45:42 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:42 INFO  GM:84 - decrypted a in 13 ms
+27-Mai-2016 18:45:44 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:44 INFO  GM:56 - got json object
+27-Mai-2016 18:45:44 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:44 INFO  GM:84 - decrypted a in 16 ms
+27-Mai-2016 18:45:49 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:49 INFO  GM:56 - got json object
+27-Mai-2016 18:45:49 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:49 INFO  GM:84 - decrypted a in 12 ms
+27-Mai-2016 18:45:53 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:53 INFO  GM:56 - got json object
+27-Mai-2016 18:45:53 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:53 INFO  GM:84 - decrypted a in 10 ms
+27-Mai-2016 18:45:55 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:45:55 INFO  GM:56 - got json object
+27-Mai-2016 18:45:55 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:45:55 INFO  GM:84 - decrypted a in 10 ms
+27-Mai-2016 18:46:34 INFO  GM:75 - encrypted cristi merge in padure in 28 ms
+27-Mai-2016 18:46:59 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:46:59 INFO  GM:56 - got json object
+27-Mai-2016 18:46:59 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:46:59 INFO  GM:84 - decrypted cristi merge in padure in 195 ms
+27-Mai-2016 18:55:32 INFO  QRnGenerator:53 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:55:32 INFO  QRnGenerator:55 - init P, Q, N, Y: 86196, 81051, 69863, 86196
+27-Mai-2016 18:55:32 INFO  GM:75 - encrypted cristi merge in padure in 20 ms
+27-Mai-2016 18:55:46 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:55:46 INFO  GM:56 - got json object
+27-Mai-2016 18:55:46 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:55:46 INFO  GM:84 - decrypted cristi merge in padure in 258 ms
+27-Mai-2016 18:55:51 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:55:51 INFO  GM:56 - got json object
+27-Mai-2016 18:55:51 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:55:51 INFO  GM:84 - decrypted cristi merge in padure in 207 ms
+27-Mai-2016 18:55:55 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:55:55 INFO  GM:56 - got json object
+27-Mai-2016 18:55:55 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:55:55 INFO  GM:84 - decrypted cristi merge in padure in 182 ms
+27-Mai-2016 18:55:57 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:55:57 INFO  GM:56 - got json object
+27-Mai-2016 18:55:57 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:55:57 INFO  GM:84 - decrypted cristi merge in padure in 195 ms
+27-Mai-2016 18:56:00 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:56:00 INFO  GM:56 - got json object
+27-Mai-2016 18:56:00 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:56:00 INFO  GM:84 - decrypted cristi merge in padure in 196 ms
+27-Mai-2016 18:56:03 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:56:03 INFO  GM:56 - got json object
+27-Mai-2016 18:56:03 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:56:03 INFO  GM:84 - decrypted cristi merge in padure in 182 ms
+27-Mai-2016 18:56:06 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:56:06 INFO  GM:56 - got json object
+27-Mai-2016 18:56:06 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:56:06 INFO  GM:84 - decrypted cristi merge in padure in 197 ms
+27-Mai-2016 18:56:08 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:56:08 INFO  GM:56 - got json object
+27-Mai-2016 18:56:08 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:56:09 INFO  GM:84 - decrypted cristi merge in padure in 193 ms
+27-Mai-2016 18:57:33 INFO  GM:75 - encrypted cristi merge in padure in 15 ms
+27-Mai-2016 18:57:57 INFO  QRnGenerator:53 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 18:57:57 INFO  QRnGenerator:55 - init P, Q, N, Y: 87344, 72057, 62938, 87344
+27-Mai-2016 18:57:57 INFO  GM:75 - encrypted cristi merge in padure in 13 ms
+27-Mai-2016 18:58:14 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:58:14 INFO  GM:56 - got json object
+27-Mai-2016 18:58:14 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:58:14 INFO  GM:84 - decrypted cristi merge in padure in 204 ms
+27-Mai-2016 18:58:17 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:58:17 INFO  GM:56 - got json object
+27-Mai-2016 18:58:17 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:58:18 INFO  GM:84 - decrypted cristi merge in padure in 199 ms
+27-Mai-2016 18:58:19 INFO  GM:43 - found content type app/json
+27-Mai-2016 18:58:19 INFO  GM:56 - got json object
+27-Mai-2016 18:58:19 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 18:58:20 INFO  GM:84 - decrypted cristi merge in padure in 200 ms
+27-Mai-2016 19:13:49 INFO  QRnGenerator:51 - try #1: N:129
+27-Mai-2016 19:13:49 INFO  QRnGenerator:51 - try #2: N:129
+27-Mai-2016 19:13:49 INFO  QRnGenerator:55 - SUCCESS: Completed in 3 tries: N is 128
+27-Mai-2016 19:13:49 INFO  QRnGenerator:57 - init P, Q, N, Y: 10875, 67273, 73163, 10875
+27-Mai-2016 19:13:49 INFO  GM:75 - encrypted cristi merge in padure sa faca procesare goldwasser-micali pe text in 39 ms
+27-Mai-2016 19:14:24 INFO  GM:43 - found content type app/json
+27-Mai-2016 19:14:24 INFO  GM:56 - got json object
+27-Mai-2016 19:14:24 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 19:14:25 INFO  GM:84 - decrypted cristi merge in padure sa faca procesare goldwasser-micali pe text in 544 ms
+27-Mai-2016 19:19:32 INFO  GM:75 - encrypted ? in 0 ms
+27-Mai-2016 19:19:43 INFO  GM:75 - encrypted a in 0 ms
+27-Mai-2016 19:19:51 INFO  GM:75 - encrypted ? in 0 ms
+27-Mai-2016 19:19:54 INFO  GM:43 - found content type app/json
+27-Mai-2016 19:19:54 INFO  GM:56 - got json object
+27-Mai-2016 19:19:54 INFO  GoldwasserMicali:79 - decrypting text....
+27-Mai-2016 19:45:49 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+27-Mai-2016 19:45:49 INFO  QRnGenerator:57 - init P, Q, N, Y: 77547, 11494, 89134, 77547
+27-Mai-2016 19:45:49 INFO  GM:75 - encrypted ? in 3 ms
+27-Mai-2016 19:45:52 INFO  GM:43 - found content type app/json
+27-Mai-2016 19:45:52 INFO  GM:56 - got json object
+27-Mai-2016 19:45:52 INFO  GoldwasserMicali:96 - decrypting text....
+27-Mai-2016 19:46:18 INFO  GM:43 - found content type app/json
+27-Mai-2016 19:46:18 INFO  GM:56 - got json object
+27-Mai-2016 19:46:20 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:53:16 INFO  QRnGenerator:51 - try #1: N:129
+28-Mai-2016 23:53:16 INFO  QRnGenerator:55 - SUCCESS: Completed in 2 tries: N is 128
+28-Mai-2016 23:53:16 INFO  QRnGenerator:57 - init P, Q, N, Y: 70947, 12273, 87077, 70947
+28-Mai-2016 23:53:16 INFO  GM:75 - encrypted a in 3 ms
+28-Mai-2016 23:53:21 INFO  GM:43 - found content type app/json
+28-Mai-2016 23:53:21 INFO  GM:56 - got json object
+28-Mai-2016 23:53:29 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:54:42 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+28-Mai-2016 23:54:42 INFO  QRnGenerator:57 - init P, Q, N, Y: 10632, 76785, 81645, 10632
+28-Mai-2016 23:54:42 INFO  GM:75 - encrypted a in 4 ms
+28-Mai-2016 23:54:44 INFO  GM:43 - found content type app/json
+28-Mai-2016 23:54:44 INFO  GM:56 - got json object
+28-Mai-2016 23:54:47 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:55:32 INFO  GM:84 - decrypted a        in 48239 ms
+28-Mai-2016 23:55:43 INFO  GM:75 - encrypted ? in 3 ms
+28-Mai-2016 23:55:46 INFO  GM:43 - found content type app/json
+28-Mai-2016 23:55:46 INFO  GM:56 - got json object
+28-Mai-2016 23:55:49 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:55:49 INFO  GM:84 - decrypted ?        in 2556 ms
+28-Mai-2016 23:56:17 INFO  GM:75 - encrypted ?ân?ar in 17 ms
+28-Mai-2016 23:56:28 INFO  GM:43 - found content type app/json
+28-Mai-2016 23:56:28 INFO  GM:56 - got json object
+28-Mai-2016 23:56:33 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:56:33 INFO  GM:84 - decrypted ?                                                                        in 5270 ms
+28-Mai-2016 23:56:49 INFO  GM:75 - encrypted ? in 1 ms
+28-Mai-2016 23:56:52 INFO  GM:43 - found content type app/json
+28-Mai-2016 23:56:52 INFO  GM:56 - got json object
+28-Mai-2016 23:56:59 INFO  GoldwasserMicali:96 - decrypting text....
+28-Mai-2016 23:58:21 INFO  GM:84 - decrypted ?        in 89796 ms
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #4: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #5: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:51 - try #6: N:129
+29-Mai-2016 00:06:44 INFO  QRnGenerator:55 - SUCCESS: Completed in 7 tries: N is 128
+29-Mai-2016 00:06:44 INFO  QRnGenerator:57 - init P, Q, N, Y: 77941, 73375, 57190, 77941
+29-Mai-2016 00:06:44 INFO  GM:75 - encrypted ? in 4 ms
+29-Mai-2016 00:06:46 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:06:46 INFO  GM:56 - got json object
+29-Mai-2016 00:06:51 INFO  GoldwasserMicali:98 - decrypting text....
+29-Mai-2016 00:06:51 INFO  GM:84 - decrypted ?        in 4565 ms
+29-Mai-2016 00:07:56 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 00:07:56 INFO  QRnGenerator:57 - init P, Q, N, Y: 10175, 79452, 80847, 10175
+29-Mai-2016 00:07:56 INFO  GM:75 - encrypted ? in 3 ms
+29-Mai-2016 00:07:58 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:07:59 INFO  GM:56 - got json object
+29-Mai-2016 00:08:02 INFO  GoldwasserMicali:98 - decrypting text....
+29-Mai-2016 00:08:02 INFO  GM:84 - decrypted ?        in 3981 ms
+29-Mai-2016 00:08:43 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 00:08:43 INFO  QRnGenerator:57 - init P, Q, N, Y: 96523, 89161, 86061, 96523
+29-Mai-2016 00:08:43 INFO  GM:75 - encrypted ? in 3 ms
+29-Mai-2016 00:08:46 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:08:46 INFO  GM:56 - got json object
+29-Mai-2016 00:08:49 INFO  GoldwasserMicali:98 - decrypting text....
+29-Mai-2016 00:09:15 INFO  GM:84 - decrypted ?        in 28921 ms
+29-Mai-2016 00:17:53 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 00:17:53 INFO  QRnGenerator:57 - init P, Q, N, Y: 97228, 88013, 85574, 97228
+29-Mai-2016 00:17:53 INFO  GM:75 - encrypted ? in 16 ms
+29-Mai-2016 00:17:56 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:17:56 INFO  GM:56 - got json object
+29-Mai-2016 00:18:00 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:18:37 INFO  GM:75 - encrypted ? in 17 ms
+29-Mai-2016 00:21:08 INFO  GM:75 - encrypted ? in 94971 ms
+29-Mai-2016 00:22:14 INFO  GM:75 - encrypted a in 41586 ms
+29-Mai-2016 00:29:19 INFO  GM:75 - encrypted ? in 189578 ms
+29-Mai-2016 00:36:37 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 00:36:37 INFO  QRnGenerator:57 - init P, Q, N, Y: 11931, 70335, 83918, 11931
+29-Mai-2016 00:37:31 INFO  GM:75 - encrypted ? in 53563 ms
+29-Mai-2016 00:37:51 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:37:51 INFO  GM:56 - got json object
+29-Mai-2016 00:37:54 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:38:40 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:38:40 INFO  GM:56 - got json object
+29-Mai-2016 00:38:43 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:40:07 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:40:21 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:40:21 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 00:40:21 INFO  QRnGenerator:55 - SUCCESS: Completed in 3 tries: N is 128
+29-Mai-2016 00:40:21 INFO  QRnGenerator:57 - init P, Q, N, Y: 81897, 10884, 89140, 81897
+29-Mai-2016 00:40:26 INFO  GM:75 - encrypted ? in 4576 ms
+29-Mai-2016 00:40:37 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:40:37 INFO  GM:56 - got json object
+29-Mai-2016 00:40:42 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:43:20 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:43:20 INFO  QRnGenerator:55 - SUCCESS: Completed in 2 tries: N is 128
+29-Mai-2016 00:43:20 INFO  QRnGenerator:57 - init P, Q, N, Y: 94444, 89317, 84355, 94444
+29-Mai-2016 00:43:23 INFO  GM:75 - encrypted ? in 2755 ms
+29-Mai-2016 00:43:32 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:43:32 INFO  GM:56 - got json object
+29-Mai-2016 00:43:36 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:44:23 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:44:44 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:44:44 INFO  GM:56 - got json object
+29-Mai-2016 00:44:44 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:44:44 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 00:44:44 INFO  QRnGenerator:55 - SUCCESS: Completed in 3 tries: N is 128
+29-Mai-2016 00:44:44 INFO  QRnGenerator:57 - init P, Q, N, Y: 77249, 93153, 71960, 77249
+29-Mai-2016 00:45:14 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:46:24 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 00:46:24 INFO  QRnGenerator:57 - init P, Q, N, Y: 77833, 11208, 87240, 77833
+29-Mai-2016 00:48:23 INFO  GM:75 - encrypted ? in 118857 ms
+29-Mai-2016 00:48:40 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:48:40 INFO  GM:56 - got json object
+29-Mai-2016 00:48:43 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:51:20 ERROR GM:89 - 
+29-Mai-2016 00:51:40 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:51:40 INFO  GM:56 - got json object
+29-Mai-2016 00:51:47 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:53:08 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:53:09 ERROR GM:89 - 
+29-Mai-2016 00:53:32 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:53:32 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 00:53:32 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 00:53:32 INFO  QRnGenerator:51 - try #4: N:129
+29-Mai-2016 00:53:32 INFO  QRnGenerator:55 - SUCCESS: Completed in 5 tries: N is 128
+29-Mai-2016 00:53:32 INFO  QRnGenerator:57 - init P, Q, N, Y: 95387, 88799, 84704, 95387
+29-Mai-2016 00:53:39 INFO  GM:75 - encrypted ? in 7339 ms
+29-Mai-2016 00:53:54 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:53:54 INFO  GM:56 - got json object
+29-Mai-2016 00:53:57 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:54:09 ERROR GM:89 - 
+29-Mai-2016 00:54:40 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:54:40 INFO  GM:56 - got json object
+29-Mai-2016 00:54:44 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:56:55 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 00:56:58 INFO  GM:84 - decrypted ??               in 137639 ms
+29-Mai-2016 00:57:06 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 00:57:06 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 00:57:06 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 00:57:06 INFO  QRnGenerator:55 - SUCCESS: Completed in 4 tries: N is 128
+29-Mai-2016 00:57:06 INFO  QRnGenerator:57 - init P, Q, N, Y: 91124, 93413, 85122, 91124
+29-Mai-2016 00:57:11 INFO  GM:75 - encrypted ? in 4803 ms
+29-Mai-2016 00:57:26 INFO  GM:43 - found content type app/json
+29-Mai-2016 00:57:26 INFO  GM:56 - got json object
+29-Mai-2016 00:57:29 INFO  GoldwasserMicali:105 - decrypting text....
+29-Mai-2016 01:00:39 INFO  GM:84 - decrypted ??               in 193650 ms
+29-Mai-2016 01:14:27 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 01:14:27 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 01:14:27 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 01:14:27 INFO  QRnGenerator:55 - SUCCESS: Completed in 4 tries: N is 128
+29-Mai-2016 01:14:27 INFO  QRnGenerator:57 - init P, Q, N, Y: 78814, 77410, 61011, 78814
+29-Mai-2016 01:29:04 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 01:29:04 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 01:29:04 INFO  QRnGenerator:55 - SUCCESS: Completed in 3 tries: N is 128
+29-Mai-2016 01:29:04 INFO  QRnGenerator:57 - init P, Q, N, Y: 88211, 72363, 63833, 88211
+29-Mai-2016 01:29:08 INFO  GoldwasserMicali:87 - encoded as ??
+29-Mai-2016 01:29:08 INFO  GM:75 - encrypted ? in 3649 ms
+29-Mai-2016 01:35:42 INFO  GoldwasserMicali:87 - encoded as ??
+29-Mai-2016 01:35:42 INFO  GM:75 - encrypted ? in 79838 ms
+29-Mai-2016 01:37:23 INFO  GoldwasserMicali:87 - encoded as ??
+29-Mai-2016 01:37:23 INFO  GM:75 - encrypted ? in 89347 ms
+29-Mai-2016 01:38:58 INFO  GoldwasserMicali:87 - encoded as ??
+29-Mai-2016 01:39:02 INFO  GM:75 - encrypted ? in 93395 ms
+29-Mai-2016 01:40:04 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 01:40:04 INFO  QRnGenerator:57 - init P, Q, N, Y: 71030, 68682, 48785, 71030
+29-Mai-2016 17:38:59 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 17:38:59 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 17:39:00 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 17:39:00 INFO  QRnGenerator:55 - SUCCESS: Completed in 4 tries: N is 128
+29-Mai-2016 17:39:00 INFO  QRnGenerator:57 - init P, Q, N, Y: 89702, 87122, 78150, 89702
+29-Mai-2016 17:49:01 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 17:49:01 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 17:49:01 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 17:49:01 INFO  QRnGenerator:51 - try #4: N:129
+29-Mai-2016 17:49:01 INFO  QRnGenerator:51 - try #5: N:129
+29-Mai-2016 17:49:01 INFO  QRnGenerator:55 - SUCCESS: Completed in 6 tries: N is 128
+29-Mai-2016 17:49:01 INFO  QRnGenerator:57 - init P, Q, N, Y: 70044, 80735, 56551, 70044
+29-Mai-2016 17:51:31 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 17:51:31 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 17:51:32 INFO  QRnGenerator:55 - SUCCESS: Completed in 3 tries: N is 128
+29-Mai-2016 17:51:32 INFO  QRnGenerator:57 - init P, Q, N, Y: 67057, 75914, 50906, 67057
+29-Mai-2016 17:52:39 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 17:52:39 INFO  QRnGenerator:55 - SUCCESS: Completed in 2 tries: N is 128
+29-Mai-2016 17:52:39 INFO  QRnGenerator:57 - init P, Q, N, Y: 78117, 94694, 73972, 78117
+29-Mai-2016 18:16:39 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 18:16:39 INFO  QRnGenerator:57 - init P, Q, N, Y: 10647, 77907, 82952, 10647
+29-Mai-2016 18:17:19 INFO  GoldwasserMicali:88 - encoded as ? 
+29-Mai-2016 18:17:39 INFO  GoldwasserMicali:88 - encoded as ?
+29-Mai-2016 18:17:39 INFO  GM:75 - encrypted ? in 59686 ms
+29-Mai-2016 18:17:45 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 18:17:45 INFO  QRnGenerator:55 - SUCCESS: Completed in 2 tries: N is 128
+29-Mai-2016 18:17:45 INFO  QRnGenerator:57 - init P, Q, N, Y: 87685, 10159, 89086, 87685
+29-Mai-2016 18:18:16 INFO  GoldwasserMicali:88 - encoded as ?
+29-Mai-2016 18:20:30 INFO  GM:75 - encrypted ? in 165112 ms
+29-Mai-2016 18:20:48 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 18:20:48 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 18:20:48 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 18:20:48 INFO  QRnGenerator:55 - SUCCESS: Completed in 4 tries: N is 128
+29-Mai-2016 18:20:48 INFO  QRnGenerator:57 - init P, Q, N, Y: 90904, 72757, 66139, 90904
+29-Mai-2016 18:20:59 INFO  GM:75 - encrypted ? in 11118 ms
+29-Mai-2016 18:21:26 INFO  GM:75 - encrypted a in 20518 ms
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #1: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #2: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #3: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #4: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #5: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #6: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:51 - try #7: N:129
+29-Mai-2016 18:23:32 INFO  QRnGenerator:55 - SUCCESS: Completed in 8 tries: N is 128
+29-Mai-2016 18:23:32 INFO  QRnGenerator:57 - init P, Q, N, Y: 81645, 80114, 65410, 81645
+29-Mai-2016 18:24:06 INFO  GM:75 - encrypted ? in 33737 ms
+29-Mai-2016 18:24:17 INFO  GM:43 - found content type app/json
+29-Mai-2016 18:24:17 INFO  GM:56 - got json object
+29-Mai-2016 18:24:21 INFO  GoldwasserMicali:112 - decrypting text....
+29-Mai-2016 18:25:19 INFO  GM:84 - decrypted ?               in 62640 ms
+29-Mai-2016 18:28:41 INFO  QRnGenerator:55 - SUCCESS: Completed in 1 tries: N is 128
+29-Mai-2016 18:28:41 INFO  QRnGenerator:57 - init P, Q, N, Y: 76206, 79741, 60768, 76206
+29-Mai-2016 18:28:48 INFO  GM:75 - encrypted ? in 7303 ms
+29-Mai-2016 18:28:59 INFO  GM:43 - found content type app/json
+29-Mai-2016 18:28:59 INFO  GM:56 - got json object
+29-Mai-2016 18:28:59 INFO  GoldwasserMicali:112 - decrypting text....
+29-Mai-2016 18:28:59 INFO  GM:85 - decrypted ? in 22 ms
+29-Mai-2016 18:29:08 INFO  GM:75 - encrypted ? in 1 ms
+29-Mai-2016 18:29:11 INFO  GM:43 - found content type app/json
+29-Mai-2016 18:29:11 INFO  GM:56 - got json object
+29-Mai-2016 18:29:11 INFO  GoldwasserMicali:112 - decrypting text....
+29-Mai-2016 18:29:11 INFO  GM:85 - decrypted ? in 23 ms
+29-Mai-2016 18:29:18 INFO  GM:75 - encrypted ? in 1 ms
+29-Mai-2016 18:29:21 INFO  GM:43 - found content type app/json
+29-Mai-2016 18:29:21 INFO  GM:56 - got json object
+29-Mai-2016 18:29:21 INFO  GoldwasserMicali:112 - decrypting text....
+29-Mai-2016 18:29:21 INFO  GM:85 - decrypted ? in 38 ms

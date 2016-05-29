@@ -81,11 +81,14 @@ public class GM extends HttpServlet {
 			try{
 				long startTime = System.nanoTime();
 				result = gm.decryptText(cryptText);
+				response.addHeader("Content-Type", "text/html; charset=utf-8");
 				logger.info("decrypted " + result + " in " + (System.nanoTime() - startTime)/1000000 + " ms");
 			}catch(InputException e){
 				response.sendError(400, e.getMessage());
 				return;
 			}catch(Exception e){
+				logger.error(e.getMessage());
+				e.printStackTrace();
 				response.sendError(500, e.getMessage());
 				return;
 			}
