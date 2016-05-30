@@ -51,7 +51,7 @@ public class CryptoUtils {
 			return null;
 		}
 		int inputLength = value.length();
-		if(inputLength % Byte.BYTES != 0){
+		if(inputLength % Byte.SIZE != 0){
 			throw new InputException("binary2Bytes: the string is not a multiple of " + Byte.SIZE);
 		}
 		int targetLength = inputLength/Byte.SIZE;

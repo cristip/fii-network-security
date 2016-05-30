@@ -10,14 +10,15 @@
 angular.module('javascriptApp')
   .service('GMCrypto', function ($http, $log) {
     var crypto = {};
-
+	//var serverAPI = 'http://localhost:8080/fii-net-sec/GM';
+	var serverAPI = '/GM';
     crypto.encBit = function(bit){
     	var params = {
     		bit:bit
     	};
     	return $http({
     		method:'POST',
-    		url:'http://localhost:8080/fii-net-sec/GM',
+    		url:serverAPI,
     		params:params
     	});
     };
@@ -27,7 +28,7 @@ angular.module('javascriptApp')
     	};
     	return $http({
     		method:'POST',
-    		url:'http://localhost:8080/fii-net-sec/GM',
+    		url:serverAPI,
     		params:params
     	});
     };
@@ -38,7 +39,7 @@ angular.module('javascriptApp')
     	return $http({
     		method:'POST',
     		headers:{'Content-Type': 'application/json'},
-    		url:'http://localhost:8080/fii-net-sec/GM',
+    		url:serverAPI,
     		data:JSON.stringify(params)
     	});
     };
@@ -49,7 +50,7 @@ angular.module('javascriptApp')
     	return $http({
     		method:'POST',
     		headers:{'Content-Type': 'application/json'},
-    		url:'http://localhost:8080/fii-net-sec/GM',
+    		url:serverAPI,
     		data:JSON.stringify(params)
     	});
     };
