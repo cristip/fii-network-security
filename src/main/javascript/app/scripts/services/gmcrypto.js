@@ -18,8 +18,9 @@ angular.module('javascriptApp')
     	};
     	return $http({
     		method:'POST',
+			headers:{'Content-Type': 'application/json; charset=utf-8'},
     		url:serverAPI,
-    		params:params
+    		data:JSON.stringify(params)
     	});
     };
     crypto.encText = function(plain){
@@ -28,8 +29,9 @@ angular.module('javascriptApp')
     	};
     	return $http({
     		method:'POST',
-    		url:serverAPI,
-    		params:params
+    		headers:{'Content-Type': 'application/json; charset=utf-8'},
+			url:serverAPI,
+    		data:JSON.stringify(params)
     	});
     };
     crypto.decypher = function(cryptoText){
@@ -38,7 +40,7 @@ angular.module('javascriptApp')
     	};
     	return $http({
     		method:'POST',
-    		headers:{'Content-Type': 'application/json'},
+    		headers:{'Content-Type': 'application/json; charset=utf-8'},
     		url:serverAPI,
     		data:JSON.stringify(params)
     	});
@@ -49,7 +51,7 @@ angular.module('javascriptApp')
     	};
     	return $http({
     		method:'POST',
-    		headers:{'Content-Type': 'application/json'},
+    		headers:{'Content-Type': 'application/json; charset=utf-8'},
     		url:serverAPI,
     		data:JSON.stringify(params)
     	});

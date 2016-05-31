@@ -2,6 +2,7 @@ package ro.infoiasi.netsec;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,39 +31,41 @@ public class GM extends HttpServlet {
 	//}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String bit = request.getParameter("bit");
+		try{
+			request.setCharacterEncoding("UTF-8");
+		}catch(UnsupportedEncodingException e){
+			logger.error("failed to set the character encoding to UTF-8:\n" + e.getMessage());
+		}
+		response.addHeader("Content-Type", "text/html; charset=utf-8");
+		String bit = null;//request.getParameter("bit");
 		//String cryptoBit = request.getParameter("ctext");
 		String cryptoBit = null;
-		String plainText = request.getParameter("plain");
+		String plainText = null;//request.getParameter("plain");
 		//String cryptText = request.getParameter("crypto");
 		String cryptText = null;
 		
-		String headerValue = request.getHeader("Content-Type");
-		
-		if(headerValue != null && headerValue.equalsIgnoreCase("application/json")){
-			logger.info("found content type app/json");
-			BufferedReader br = request.getReader();
-			String line = null;
-			StringBuffer sb = new StringBuffer();
-			while ((line = br.readLine()) != null) {
-				sb.append(line);
+		BufferedReader br = request.getReader();
+		String line = null;
+		StringBuffer sb = new StringBuffer();
+		while ((line = br.readLine()) != null) {
+			sb.append(line);
+		}
+		String jsonString = sb.toString();
+		try{
+			logger.info("parsing content " + jsonString.substring(0, jsonString.length()> 50?50:jsonString.length()));
+			JSONObject jo = new JSONObject(jsonString); //HTTP.toJSONObject(jsonString);
+			logger.info("got json object");
+			if(jo.has("crypto")){
+				cryptText = jo.getString("crypto");
+			}else if(jo.has("ctext")){
+				cryptoBit = jo.getString("ctext");
+			}else if(jo.has("bit")){
+				bit = jo.getString("bit");
+			}else if(jo.has("plain")){
+				plainText = jo.getString("plain");
 			}
-			String jsonString = sb.toString();
-			//logger.info("found content " + jsonString);
-			try{
-				//jsonString = jsonString.replace("\"", "\\\"");
-				//logger.info("parsing content " + jsonString);
-				JSONObject jo = new JSONObject(jsonString); //HTTP.toJSONObject(jsonString);
-				logger.info("got json object");
-				if(jo.has("crypto")){
-					cryptText = jo.getString("crypto");
-				}else if(jo.has("ctext")){
-					cryptoBit = jo.getString("ctext");
-				}
-				//logger.info("cryptText: " + cryptText);
-			}catch(JSONException e){
-				logger.error("error parsing json ", e);
-			}
+		}catch(JSONException e){
+			logger.error("error parsing json ", e);
 		}
 		
 		
@@ -81,7 +84,6 @@ public class GM extends HttpServlet {
 			try{
 				long startTime = System.nanoTime();
 				result = gm.decryptText(cryptText);
-				response.addHeader("Content-Type", "text/html; charset=utf-8");
 				logger.info("decrypted " + result + " in " + (System.nanoTime() - startTime)/1000000 + " ms");
 			}catch(InputException e){
 				response.sendError(400, e.getMessage());
