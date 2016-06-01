@@ -8,7 +8,7 @@
  * Service in the javascriptApp.
  */
 angular.module('javascriptApp')
-  .service('GMCrypto', function ($http, $log) {
+  .service('GMCrypto', function ($http) {
     var crypto = {};
 	//var serverAPI = 'http://localhost:8080/fii-net-sec/GM';
 	var serverAPI = '/GM';
@@ -75,9 +75,7 @@ angular.module('javascriptApp')
   		var result = [];
   		for(var i = 0; i < binStr.length; i+=8){
   			var segment = binStr.substr(i, 8);
-  			$log.info('segment ', segment);
   			var integerValue = parseInt(segment, 2);
-  			$log.info('integerValue ', integerValue.toString(16));
   			result.push(integerValue.toString(16));
   		}
   		return result.join(' ');
